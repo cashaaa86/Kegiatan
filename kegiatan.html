@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logbook Kegiatan Gudang</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Logbook Kegiatan Gudang</h1>
+
+  <form id="logForm">
+    <label for="startTime">Waktu Mulai:</label>
+    <input type="time" id="startTime" name="startTime">
+
+    <label for="endTime">Waktu Selesai:</label>
+    <input type="time" id="endTime" name="endTime">
+
+    <label for="activity">Pilih Kegiatan:</label>
+    <select id="activity" name="activity">
+      <option value="angkat_berat">Mengangkat Beban Berat ke Truk</option>
+      <option value="turun_berat">Menurunkan Beban Berat ke Truk</option>
+      <option value="pindah_berat">Memindahkan Beban Berat</option>
+      <option value="sortir_barang">Mensortir Barang</option>
+      <option value="paket_barang">Mengepakkan Barang</option>
+      <option value="administrasi">Melakukan Pekerjaan Administrasi</option>
+      <option value="lainnya">Yang Lainnya (Tuliskan)</option>
+    </select>
+
+    <label for="otherActivity">Kegiatan Lainnya:</label>
+    <input type="text" id="otherActivity" name="otherActivity">
+
+    <button type="submit">Tambahkan Kegiatan</button>
+  </form>
+
+  <div id="logEntries">
+    <!-- Tempat untuk menampilkan riwayat logbook -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
